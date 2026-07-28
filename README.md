@@ -81,7 +81,7 @@ trailing_stop| Dynamic trailing stop management
 
 Installation
 
-git clone https://github.com/yourusername/Financial-Risk-Management.git
+git clone (https://github.com/RasoulZahmatkesh)/Financial-Risk-Management.git
 
 cd Financial-Risk-Management
 
