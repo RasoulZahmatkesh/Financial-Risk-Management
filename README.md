@@ -1,237 +1,218 @@
-عالی است. اگر هدفت این است که این پروژه در GitHub حرفه‌ای دیده شود و برای رزومه، جذب کارفرما، اپلای ارشد/دکتری، یا استخدام در حوزه Quant و AI ارزش داشته باشد، README باید در حد پروژه‌های متن‌باز بزرگ باشد، نه فقط چند پاراگراف توضیح.
+📊 Financial Risk Management Framework
 
-من برای پروژه تو چنین ساختاری پیشنهاد می‌کنم:
+<div align="center">Enterprise-Grade Python Framework for Financial Market Risk Management
 
+A modular, scalable, and extensible toolkit for quantitative risk analysis, portfolio management, and professional trading systems.
 
----
+"Python" (https://img.shields.io/badge/Python-3.10+-3776AB?style=for-the-badge&logo=python&logoColor=white)
+"Finance" (https://img.shields.io/badge/Finance-Quantitative-darkgreen?style=for-the-badge)
+"Risk" (https://img.shields.io/badge/Risk-Management-red?style=for-the-badge)
+"License" (https://img.shields.io/badge/License-MIT-blue?style=for-the-badge)
+"Status" (https://img.shields.io/badge/Status-Active-success?style=for-the-badge)
 
-🌍 صفحه اول GitHub
+</div>---
 
-# 📈 Financial Risk Management Framework
+Overview
 
-> Enterprise-grade Python framework for quantitative risk management, portfolio analytics, and financial market modelling.
+Financial Risk Management Framework is a professional Python package developed for analysing and controlling financial market risk.
 
-[![Python](https://img.shields.io/badge/Python-3.10+-blue.svg)]
-[![License](https://img.shields.io/badge/License-MIT-green.svg)]
-[![Status](https://img.shields.io/badge/Status-Active-success.svg)]
-[![Version](https://img.shields.io/badge/Version-1.0-orange.svg)]
-[![Contributions](https://img.shields.io/badge/Contributions-Welcome-blue.svg)]
-[![Financial Engineering](https://img.shields.io/badge/Finance-Quantitative-red.svg)]
+The framework provides independent modules covering capital management, portfolio exposure, leverage, liquidation analysis, margin calculations, drawdown control, stop-loss management, take-profit strategies, and comprehensive risk reporting.
 
-
----
-
-✨ Hero Section
-
-Professional Risk Management Toolkit
-designed for
-
-• Algorithmic Trading
-• Quantitative Finance
-• Portfolio Management
-• Financial Engineering
-• Research
-
+The project is designed with modular architecture so that every component can be used independently or integrated into larger algorithmic trading systems.
 
 ---
 
-📸 Screenshot
+Key Features
 
-در این قسمت بعداً عکس خروجی برنامه قرار می‌دهیم.
-
-images/dashboard.png
-
-
----
-
-🚀 Features
-
-Feature	Status
-
-Portfolio Risk Analysis	✅
-Position Sizing	✅
-Risk Metrics	✅
-Capital Allocation	✅
-Trade Evaluation	✅
-Portfolio Analytics	✅
-Modular Design	✅
-Reporting	✅
-AI Ready	✅
-API Ready	✅
-
-
+- Professional Risk Management
+- Portfolio Risk Analysis
+- Position Size Calculation
+- Capital Management
+- Exposure Monitoring
+- Drawdown Analysis
+- Margin Calculation
+- Liquidation Estimation
+- Leverage Management
+- Stop Loss Engine
+- Take Profit Engine
+- Trailing Stop Management
+- Risk Validation
+- Risk Reporting
+- Modular Python Architecture
 
 ---
 
-🏗 Architecture
+Project Structure
 
-Financial Markets
-
-                      │
-
-        ┌─────────────▼─────────────┐
-        │     Data Processing       │
-        └─────────────┬─────────────┘
-                      │
-        ┌─────────────▼─────────────┐
-        │      Risk Engine          │
-        └─────────────┬─────────────┘
-                      │
-      ┌───────────────┼────────────────┐
-      │               │                │
- Portfolio       Position Size    Risk Metrics
-
-      │               │                │
-
-      └───────────────▼────────────────┘
-
-              Reports & Analytics
-
+risk/
+│
+├── capital_manager.py
+├── correlation_manager.py
+├── drawdown_manager.py
+├── exposure_manager.py
+├── leverage.py
+├── liquidation_manager.py
+├── margin_manager.py
+├── money_manager.py
+├── portfolio_risk.py
+├── position_size.py
+├── risk_limits.py
+├── risk_manager.py
+├── risk_report.py
+├── risk_validator.py
+├── stoploss.py
+├── takeprofit.py
+├── trailing_stop.py
+└── __init__.py
 
 ---
 
-📦 Installation
+Module Description
 
-git clone ...
+Module| Description
+capital_manager| Capital allocation and capital preservation
+correlation_manager| Portfolio correlation analysis
+drawdown_manager| Maximum drawdown calculation
+exposure_manager| Market exposure management
+leverage| Leverage calculations
+liquidation_manager| Liquidation price estimation
+margin_manager| Margin calculation
+money_manager| Money management strategies
+portfolio_risk| Portfolio-wide risk assessment
+position_size| Position sizing algorithms
+risk_limits| Risk limitation rules
+risk_manager| Core risk engine
+risk_report| Risk reporting utilities
+risk_validator| Validation of risk parameters
+stoploss| Stop-loss calculation
+takeprofit| Take-profit calculation
+trailing_stop| Dynamic trailing stop management
+
+---
+
+Installation
+
+git clone https://github.com/yourusername/Financial-Risk-Management.git
 
 cd Financial-Risk-Management
 
 pip install -r requirements.txt
 
+---
+
+Requirements
+
+- Python 3.10+
+- pandas
 
 ---
 
-💻 Quick Start
+Example
 
-from risk import RiskManager
+from risk.risk_manager import RiskManager
 
 manager = RiskManager()
 
-result = manager.calculate(
-    capital=100000,
-    risk_percent=2
-)
+result = manager.calculate()
 
 print(result)
 
-
 ---
-
-📁 Project Structure
-
-Financial-Risk-Management/
-
-│
-├── analytics/
-├── portfolio/
-├── risk/
-├── reports/
-├── utils/
-├── tests/
-├── examples/
-├── docs/
-├── requirements.txt
-├── LICENSE
-├── README.md
-└── main.py
-
-
----
-
-📊 Risk Models
-
-✅ Position Sizing
-
-✅ Portfolio Exposure
-
-✅ Capital Management
-
-✅ Risk Reward
-
-✅ Drawdown Analysis
-
-✅ Portfolio Statistics
-
-✅ Risk Aggregation
-
-
----
-
-🎯 Roadmap
-
-Historical Backtesting
-
-Monte Carlo Simulation
-
-Value at Risk (VaR)
-
-Conditional VaR
-
-Black-Scholes
-
-Greeks
-
-Portfolio Optimization
-
-Reinforcement Learning
-
-Machine Learning
-
-Deep Learning
-
-Streamlit Dashboard
-
-FastAPI
-
-Docker
-
-Kubernetes
-
-Cloud Deployment
-
-
-
----
-
-📚 Documentation
-
-docs/
-
-Installation
 
 Architecture
 
-API
+Financial Data
 
-Examples
+        │
 
-Tutorials
+        ▼
 
-Financial Theory
+Capital Management
+
+        │
+
+        ▼
+
+Risk Engine
+
+        │
+
+ ┌──────┼─────────┐
+
+ ▼      ▼         ▼
+
+Exposure  Portfolio  Drawdown
+
+ │         │          │
+
+ └─────────┼──────────┘
+
+           ▼
+
+ Risk Report
+
+---
+
+Applications
+
+- Algorithmic Trading
+- Portfolio Management
+- Quantitative Finance
+- Financial Engineering
+- Risk Analytics
+- Hedge Fund Research
+- Trading System Development
+- Investment Analysis
+
+---
+
+Future Development
+
+- Value at Risk (VaR)
+
+- Conditional Value at Risk (CVaR)
+
+- Monte Carlo Simulation
+
+- Historical Simulation
+
+- Portfolio Optimisation
+
+- Black-Scholes Pricing
+
+- Greeks Calculation
+
+- Machine Learning Integration
+
+- Deep Learning Models
+
+- Reinforcement Learning
+
+- Market Regime Detection
+
+- Interactive Dashboard
+
+- REST API
+
+- Docker Deployment
+
+---
+
+Contributing
+
+Contributions are welcome.
+
+Please open an issue before submitting major changes.
+
+---
+
+License
+
+This project is licensed under the MIT License.
 
 
 ---
 
-🧪 Testing
+Vision
 
-pytest
-
-
----
-
-🤝 Contributing
-
-Fork
-
-Create Branch
-
-Commit
-
-Pull Request
-
-
----
-
-⭐ Support
-
-If you find this project useful, please consider giving it a ⭐ on GitHub.
+The long-term vision of this project is to evolve into a comprehensive open-source quantitative finance platform capable of supporting professional traders, researchers, financial engineers, and AI-driven trading systems.
