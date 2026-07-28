@@ -210,6 +210,13 @@ License
 
 This project is licensed under the MIT License.
 
+---
+
+Author
+
+Rasoul Zahmatkesh
+
+Chemical Engineering • Artificial Intelligence • Quantitative Finance
 
 ---
 
