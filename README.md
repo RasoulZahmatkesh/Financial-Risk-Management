@@ -10,7 +10,8 @@ A modular, scalable, and extensible toolkit for quantitative risk analysis, port
 "License"(https://img.shields.io/badge/License-MIT-blue?style=for-the-badge)
 "Status"(https://img.shields.io/badge/Status-Active-success?style=for-the-badge)
 
-</div>---
+</div>
+---
 
 Overview
 
