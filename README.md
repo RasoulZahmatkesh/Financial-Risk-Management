@@ -4,11 +4,11 @@
 
 A modular, scalable, and extensible toolkit for quantitative risk analysis, portfolio management, and professional trading systems.
 
-"Python" (https://img.shields.io/badge/Python-3.10+-3776AB?style=for-the-badge&logo=python&logoColor=white)
-"Finance" (https://img.shields.io/badge/Finance-Quantitative-darkgreen?style=for-the-badge)
-"Risk" (https://img.shields.io/badge/Risk-Management-red?style=for-the-badge)
-"License" (https://img.shields.io/badge/License-MIT-blue?style=for-the-badge)
-"Status" (https://img.shields.io/badge/Status-Active-success?style=for-the-badge)
+"Python"(https://img.shields.io/badge/Python-3.10+-3776AB?style=for-the-badge&logo=python&logoColor=white)
+"Finance"(https://img.shields.io/badge/Finance-Quantitative-darkgreen?style=for-the-badge)
+"Risk"(https://img.shields.io/badge/Risk-Management-red?style=for-the-badge)
+"License"(https://img.shields.io/badge/License-MIT-blue?style=for-the-badge)
+"Status"(https://img.shields.io/badge/Status-Active-success?style=for-the-badge)
 
 </div>---
 
@@ -110,46 +110,43 @@ Requirements
 Example
 
 from risk.risk_manager import RiskManager
-
 manager = RiskManager()
-
 result = manager.calculate()
-
 print(result)
 
 ---
 
 Architecture
 
-Financial Data
+        Financial Data
 
         │
 
         ▼
 
-Capital Management
+    Capital Management
 
         │
 
         ▼
 
-Risk Engine
+        Risk Engine
 
         │
 
- ┌──────┼─────────┐
+         ┌──────┼─────────┐
 
- ▼      ▼         ▼
+         ▼      ▼         ▼
 
-Exposure  Portfolio  Drawdown
+        Exposure  Portfolio  Drawdown
 
- │         │          │
+         │         │          │
 
- └─────────┼──────────┘
+         └─────────┼──────────┘
 
            ▼
 
- Risk Report
+         Risk Report
 
 ---
 
@@ -169,57 +166,16 @@ Applications
 Future Development
 
 - Value at Risk (VaR)
-
 - Conditional Value at Risk (CVaR)
-
 - Monte Carlo Simulation
-
 - Historical Simulation
-
 - Portfolio Optimisation
-
 - Black-Scholes Pricing
-
 - Greeks Calculation
-
 - Machine Learning Integration
-
 - Deep Learning Models
-
 - Reinforcement Learning
-
 - Market Regime Detection
-
 - Interactive Dashboard
-
 - REST API
-
 - Docker Deployment
-
----
-
-Contributing
-
-Contributions are welcome.
-
-Please open an issue before submitting major changes.
-
----
-
-License
-
-This project is licensed under the MIT License.
-
----
-
-Author
-
-Rasoul Zahmatkesh
-
-Chemical Engineering • Artificial Intelligence • Quantitative Finance
-
----
-
-Vision
-
-The long-term vision of this project is to evolve into a comprehensive open-source quantitative finance platform capable of supporting professional traders, researchers, financial engineers, and AI-driven trading systems.
