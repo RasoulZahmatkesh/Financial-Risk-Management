@@ -1,4 +1,4 @@
-📊 ** Financial Risk Management Framework **
+📊 **Financial Risk Management Framework**
 
 
 Overview
@@ -32,7 +32,7 @@ Key Features
 ---
 
 Project Structure
-
+```
 risk/
 │
 ├── capital_manager.py
@@ -53,7 +53,7 @@ risk/
 ├── takeprofit.py
 ├── trailing_stop.py
 └── __init__.py
-
+```
 ---
 
 Module Description
@@ -81,11 +81,9 @@ trailing_stop| Dynamic trailing stop management
 
 Installation
 
-git clone (https://github.com/RasoulZahmatkesh)/Financial-Risk-Management.git
+git clone https://github.com/RasoulZahmatkesh/Financial-Risk-Management.git
 
 cd Financial-Risk-Management
-
-pip install -r requirements.txt
 
 ---
 
