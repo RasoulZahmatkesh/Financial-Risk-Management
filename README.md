@@ -1,13 +1,19 @@
 📊 Financial Risk Management Framework
 
-<div align="center">Enterprise-Grade Python Framework for Financial Market Risk Management
+<div 
+
+        align="center">Enterprise-Grade Python Framework for Financial Market Risk Management
 
 A modular, scalable, and extensible toolkit for quantitative risk analysis, portfolio management, and professional trading systems.
 
 "Python"(https://img.shields.io/badge/Python-3.10+-3776AB?style=for-the-badge&logo=python&logoColor=white)
+
 "Finance"(https://img.shields.io/badge/Finance-Quantitative-darkgreen?style=for-the-badge)
+
 "Risk"(https://img.shields.io/badge/Risk-Management-red?style=for-the-badge)
+
 "License"(https://img.shields.io/badge/License-MIT-blue?style=for-the-badge)
+
 "Status"(https://img.shields.io/badge/Status-Active-success?style=for-the-badge)
 
 </div>
