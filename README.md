@@ -1,8 +1,8 @@
-# AI Risk Management Framework
+# Financial Risk Management Framework
 
 A lightweight, modular, and extensible Python framework for **algorithmic trading risk management**.
 
-The project provides a complete risk management pipeline that evaluates trading risk, validates portfolio conditions, calculates position sizing, monitors leverage and drawdown, and generates structured reports.
+The project provides a complete Financial Risk Management pipeline that evaluates trading risk, validates portfolio conditions, calculates position sizing, monitors leverage and drawdown, and generates structured reports.
 
 The framework is designed to work as a **standalone Python application** or as a reusable package inside trading bots, backtesting engines, portfolio management systems, and machine learning projects.
 
@@ -30,7 +30,7 @@ The framework is designed to work as a **standalone Python application** or as a
 ## Project Structure
 
 ```
-ai-risk-management/
+Financial-Risk-Management
 │
 ├── README.md
 ├── requirements.txt
@@ -114,7 +114,7 @@ python main.py
 
 ```text
 ==========================================================
-           AI RISK MANAGEMENT FRAMEWORK v1.0
+           Financial Risk Management FRAMEWORK v1.0
 ==========================================================
 
 ACCOUNT
@@ -213,7 +213,7 @@ The framework automatically generates a structured JSON report.
 
 ---
 
-## AI Risk Engine
+## Financial-Risk-Management Engine
 
 The AI module provides intelligent recommendations based on market conditions and portfolio statistics.
 
@@ -289,4 +289,3 @@ This framework can be integrated into:
 * Dataclasses
 * JSON
 * Object-Oriented Programming (OOP)
-
