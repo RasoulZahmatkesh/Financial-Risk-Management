@@ -1,168 +1,292 @@
-📊 **Financial Risk Management Framework**
+# AI Risk Management Framework
 
+A lightweight, modular, and extensible Python framework for **algorithmic trading risk management**.
 
-Overview
+The project provides a complete risk management pipeline that evaluates trading risk, validates portfolio conditions, calculates position sizing, monitors leverage and drawdown, and generates structured reports.
 
-Financial Risk Management Framework is a professional Python package developed for analysing and controlling financial market risk.
-
-The framework provides independent modules covering capital management, portfolio exposure, leverage, liquidation analysis, margin calculations, drawdown control, stop-loss management, take-profit strategies, and comprehensive risk reporting.
-
-The project is designed with modular architecture so that every component can be used independently or integrated into larger algorithmic trading systems.
+The framework is designed to work as a **standalone Python application** or as a reusable package inside trading bots, backtesting engines, portfolio management systems, and machine learning projects.
 
 ---
 
-Key Features
+## Features
 
-- Professional Risk Management
-- Portfolio Risk Analysis
-- Position Size Calculation
-- Capital Management
-- Exposure Monitoring
-- Drawdown Analysis
-- Margin Calculation
-- Liquidation Estimation
-- Leverage Management
-- Stop Loss Engine
-- Take Profit Engine
-- Trailing Stop Management
-- Risk Validation
-- Risk Reporting
-- Modular Python Architecture
+* Capital Management
+* Money Management
+* Position Sizing
+* Portfolio Risk Analysis
+* Exposure Management
+* Leverage & Margin Calculation
+* Liquidation Price Estimation
+* Drawdown Monitoring
+* Trade Validation
+* AI-Based Risk Recommendation
+* JSON Report Generation
+* Console Report
+* Modular Architecture
+* GitHub Ready
 
 ---
 
-Project Structure
+## Project Structure
+
 ```
-risk/
+ai-risk-management/
 │
-├── capital_manager.py
-├── correlation_manager.py
-├── drawdown_manager.py
-├── exposure_manager.py
-├── leverage.py
-├── liquidation_manager.py
-├── margin_manager.py
-├── money_manager.py
-├── portfolio_risk.py
-├── position_size.py
-├── risk_limits.py
-├── risk_manager.py
-├── risk_report.py
-├── risk_validator.py
-├── stoploss.py
-├── takeprofit.py
-├── trailing_stop.py
-└── __init__.py
+├── README.md
+├── requirements.txt
+├── main.py
+│
+└── risk/
+    ├── __init__.py
+    ├── capital.py
+    ├── money.py
+    ├── position.py
+    ├── portfolio.py
+    ├── leverage.py
+    ├── drawdown.py
+    ├── validator.py
+    ├── report.py
+    └── ai.py
 ```
----
-
-Module Description
-
-Module| Description
-capital_manager| Capital allocation and capital preservation
-correlation_manager| Portfolio correlation analysis
-drawdown_manager| Maximum drawdown calculation
-exposure_manager| Market exposure management
-leverage| Leverage calculations
-liquidation_manager| Liquidation price estimation
-margin_manager| Margin calculation
-money_manager| Money management strategies
-portfolio_risk| Portfolio-wide risk assessment
-position_size| Position sizing algorithms
-risk_limits| Risk limitation rules
-risk_manager| Core risk engine
-risk_report| Risk reporting utilities
-risk_validator| Validation of risk parameters
-stoploss| Stop-loss calculation
-takeprofit| Take-profit calculation
-trailing_stop| Dynamic trailing stop management
 
 ---
 
-Installation
+## Architecture
 
+```
+                 main.py
+                     │
+                     ▼
+            Capital Manager
+                     │
+                     ▼
+            Money Manager
+                     │
+                     ▼
+           Position Manager
+                     │
+                     ▼
+          Portfolio Manager
+                     │
+                     ▼
+           Leverage Manager
+                     │
+                     ▼
+          Drawdown Manager
+                     │
+                     ▼
+            Risk Validator
+                     │
+                     ▼
+             AI Risk Engine
+                     │
+                     ▼
+             Risk Report
+```
+
+---
+
+## Installation
+
+Clone the repository
+
+```bash
 git clone https://github.com/RasoulZahmatkesh/Financial-Risk-Management.git
 
 cd Financial-Risk-Management
+```
+
+Install dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+Run
+
+```bash
+python main.py
+```
 
 ---
 
-Requirements
+## Example Console Output
 
-- Python 3.10+
-- pandas
+```text
+==========================================================
+           AI RISK MANAGEMENT FRAMEWORK v1.0
+==========================================================
+
+ACCOUNT
+----------------------------------------------------------
+
+Balance                 : 10000.00 USD
+Equity                  : 9980.00 USD
+Tradable Balance        : 9000.00 USD
+Reserved Capital        : 1000.00 USD
+ROI                     : 5.80 %
+
+----------------------------------------------------------
+MONEY MANAGEMENT
+----------------------------------------------------------
+
+Risk Percent            : 1.00 %
+Risk Amount             : 100.00 USD
+Entry Price             : 31000.00
+Stop Loss               : 30500.00
+Take Profit             : 32000.00
+
+Position Size           : 0.2000 BTC
+Reward / Risk           : 2.00
+
+----------------------------------------------------------
+PORTFOLIO
+----------------------------------------------------------
+
+Portfolio Risk          : 2.60 %
+Open Positions          : 3
+Exposure                : 31 %
+Correlation             : LOW
+
+----------------------------------------------------------
+LEVERAGE
+----------------------------------------------------------
+
+Leverage                : 5x
+Margin                  : 620 USD
+Liquidation Price       : 27950
+
+----------------------------------------------------------
+DRAWDOWN
+----------------------------------------------------------
+
+Current Drawdown        : 2.10 %
+Maximum Drawdown        : 20.00 %
+
+Status                  : SAFE
+
+----------------------------------------------------------
+VALIDATION
+----------------------------------------------------------
+
+✓ Trade Approved
+
+----------------------------------------------------------
+AI ENGINE
+----------------------------------------------------------
+
+Market Regime           : TRENDING
+Volatility              : LOW
+Recommended Risk        : 0.82 %
+Win Probability         : 81 %
+Confidence              : 93 %
+
+----------------------------------------------------------
+OVERALL RISK SCORE
+----------------------------------------------------------
+
+91 / 100
+
+Risk Level              : LOW
+
+==========================================================
+```
 
 ---
 
-Example
+## JSON Output
 
-from risk.risk_manager import RiskManager
-manager = RiskManager()
-result = manager.calculate()
-print(result)
+The framework automatically generates a structured JSON report.
 
----
-
-Architecture
-
-        Financial Data
-
-        │
-
-        ▼
-
-    Capital Management
-
-        │
-
-        ▼
-
-        Risk Engine
-
-        │
-
-         ┌──────┼─────────┐
-
-         ▼      ▼         ▼
-
-        Exposure  Portfolio  Drawdown
-
-         │         │          │
-
-         └─────────┼──────────┘
-
-           ▼
-
-         Risk Report
+```json
+{
+  "account": {},
+  "money": {},
+  "portfolio": {},
+  "leverage": {},
+  "drawdown": {},
+  "validation": {},
+  "ai": {},
+  "risk_score": 91
+}
+```
 
 ---
 
-Applications
+## AI Risk Engine
 
-- Algorithmic Trading
-- Portfolio Management
-- Quantitative Finance
-- Financial Engineering
-- Risk Analytics
-- Hedge Fund Research
-- Trading System Development
-- Investment Analysis
+The AI module provides intelligent recommendations based on market conditions and portfolio statistics.
+
+Current capabilities include:
+
+* Recommended Risk Percentage
+* Position Size Recommendation
+* Win Probability Estimation
+* Market Regime Classification
+* Volatility Assessment
+* Confidence Score
+
+The current implementation is rule-based and is designed to be easily upgraded with machine learning models such as:
+
+* Random Forest
+* XGBoost
+* LightGBM
+* CatBoost
+* LSTM
+* Transformer
+
+without changing the public API.
 
 ---
 
-Future Development
+## Use Cases
 
-- Value at Risk (VaR)
-- Conditional Value at Risk (CVaR)
-- Monte Carlo Simulation
-- Historical Simulation
-- Portfolio Optimisation
-- Black-Scholes Pricing
-- Greeks Calculation
-- Machine Learning Integration
-- Deep Learning Models
-- Reinforcement Learning
-- Market Regime Detection
-- Interactive Dashboard
-- REST API
-- Docker Deployment
+This framework can be integrated into:
+
+* Algorithmic Trading Bots
+* Crypto Trading Systems
+* Portfolio Management Software
+* Risk Monitoring Dashboards
+* Machine Learning Pipelines
+* Backtesting Frameworks
+* Quantitative Finance Research
+* Educational Projects
+
+---
+
+## Future Roadmap
+
+### Version 1.1
+
+* Improved validation
+* Better reporting
+* Unit tests
+* Performance optimization
+
+
+### Version 2.0
+
+* Machine Learning Risk Prediction
+* Dynamic Position Sizing
+* Volatility Forecasting
+* Drawdown Prediction
+
+
+### Version 3.0
+
+* Deep Learning Models
+* Reinforcement Learning
+* Portfolio Optimization
+* Explainable AI (SHAP)
+
+---
+
+## Technologies
+
+* Python 3
+* NumPy
+* Pandas
+* Dataclasses
+* JSON
+* Object-Oriented Programming (OOP)
+
